@@ -53,3 +53,10 @@
     font-family:"黑体";
     margin-left:86%;
 }
+
+.main{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
