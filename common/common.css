@@ -1,0 +1,98 @@
+/*
+* common.less
+* 功能：通用样式，各项目间的一些基类、常用类等：
+* 要求：
+* 1、媒体查询或者基本dom的样式
+* 2、基础常用类的定义：right\left\hide等
+* 3、项目业务相关的基础类或者通用类：请放到自有项目的common.less中去，通过@import base\common 导入共用的样式
+*/
+/*
+* base.less
+* 功能：基本样式，浏览器兼容或者统一浏览器基本样式
+* 基本要求：
+* - 不含任何类名（只存在dom标签）
+* - 只做浏览器间 各dom 标签渲染 的统一性问题
+* - 对于新发现的 样式 统一性问题 最好备注一下手机型号、系统、具体样式等信息
+*/
+html,
+body,
+p,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+textarea {
+  padding: 0;
+  margin: 0;
+}
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img {
+  width: 100%;
+}
+a,
+ul,
+li {
+  width: 100%;
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+a:-webkit-any-link {
+  color: inherit;
+}
+input {
+  -webkit-tap-highlight-color: #fff;
+  outline: none;
+  border: none;
+  line-height: 100%;
+  font: inherit;
+  background-color: inherit;
+}
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+/**
+*  和项目相关的 标签类设置、
+*/
+body,
+html {
+  width: 100%;
+  Font-size: 10px;
+}
+img {
+  width: 100%;
+}
+/**
+* 基本常用类
+*/
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.f-bold {
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.overflow {
+  overflow: hidden;
+}
+.transform180 {
+  transform: rotate(180deg);
+}
+.center {
+  text-align: center;
+}
