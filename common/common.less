@@ -1,0 +1,62 @@
+/*
+* common.less
+* 功能：通用样式，各项目间的一些基类、常用类等：
+* 要求：
+* 1、媒体查询或者基本dom的样式
+* 2、基础常用类的定义：right\left\hide等
+* 3、项目业务相关的基础类或者通用类：请放到自有项目的common.less中去，通过@import base\common 导入共用的样式
+*/
+
+@import "base";
+/**
+*  和项目相关的 标签类设置、
+*/
+
+body,html{
+  //height: 100%;
+  width: 100%;
+  //1rem = 10px
+  Font-size:10px;
+}
+img{
+  width: 100%;
+}
+
+
+/**
+* 基本常用类
+*/
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.f-bold {
+  font-weight: bold;;
+}
+
+.hide {
+  display: none;
+}
+
+//使用遮罩时经常需要hidden body
+.overflow {
+  overflow: hidden;
+}
+
+//旋转180
+.transform180 {
+  transform: rotate(180deg);
+}
+.center{
+  text-align: center;
+}
+
+
+//remove if you do not use iconfont
+.iconfont{
+  font-size: inherit;
+}
