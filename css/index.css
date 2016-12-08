@@ -40,6 +40,9 @@ li {
   font-family: "黑体";
   color: #B0B0B0;
 }
+.head a:hover {
+  color: white;
+}
 .head .listleft {
   width: 50%;
 }
@@ -68,7 +71,6 @@ li {
 .main {
   width: 92%;
   margin: 0 auto;
-  font-size: 1.6rem;
 }
 .main .maintop {
   height: 7.5rem;
@@ -80,6 +82,9 @@ li {
 .main .maintop .topmiddle {
   width: 60%;
   margin-top: 2.5rem;
+}
+.main .maintop .topmiddle a:hover {
+  color: #FF6700;
 }
 .main .maintop .topmiddle li {
   float: left;
@@ -106,17 +111,21 @@ li {
   margin-top: 1.5rem;
 }
 .main .mainmiddle a {
+  display: block;
   font-size: 1.6rem;
   color: white;
   font-family: "黑体";
+  padding: 1rem 1.6rem 1rem 2.2rem;
+}
+.main .mainmiddle a:hover {
+  background: #FF6700;
 }
 .main .mainmiddle .middleleft {
   width: 20%;
   background-color: #4C4C4C;
-  padding: 0.92rem 0 0.92rem 0;
+  padding: 1.65rem 0 1.65rem 0;
 }
 .main .mainmiddle .middleleft li {
-  padding: 0.95rem 1.6rem 0.95rem 2.2rem;
   overflow: hidden;
 }
 .main .mainmiddle .middleleft span {
@@ -128,10 +137,37 @@ li {
 .main .mainmiddle .middleright {
   width: 80%;
 }
-.main .mainbottom {
-  margin-top: 1rem;
+.foot {
+  margin: 0 auto;
+  width: 92%;
 }
-.main .mainbottom .bottomleft {
-  width: 20%;
-  background-color: #5F5750;
+.foot .foottop {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.foot .foottop a:hover {
+  color: #FF6700;
+}
+.foot .foottop li {
+  float: left;
+  width: 15%;
+  margin-left: 4%;
+  border-right: 1px solid #cccccc;
+}
+.foot .foottop a {
+  font-size: 2rem;
+  color: #616161;
+}
+.foot .foottop ul .delborder {
+  border: none;
+}
+.foot .footbottom {
+  font-size: 3rem;
+  color: #CACACA;
+  height: 6rem;
+  line-height: 6rem;
+  font-family: "华文新魏";
+}
+.foot .footbottom .words {
+  margin-left: 35%;
 }

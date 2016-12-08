@@ -44,6 +44,9 @@ ul,li{
     font-family: "黑体";
     color: #B0B0B0;
   }
+  a:hover{
+    color: white;
+  }
   .listleft {
     width: 50%;
   }
@@ -75,7 +78,6 @@ ul .delborder{
 .main {
   width: 92%;
   margin: 0 auto;
-  font-size: 1.6rem;
   .maintop {
     height: 7.5rem;
     .topleft {
@@ -85,6 +87,9 @@ ul .delborder{
     .topmiddle {
       width: 60%;
       margin-top: 2.5rem;
+      a:hover{
+        color:#FF6700;
+      }
       li {
         float: left;
         margin-right: 1.2rem;
@@ -110,17 +115,20 @@ ul .delborder{
   }
   .mainmiddle {
     margin-top: 1.5rem;
-    a {
+    a {display: block;
       font-size: 1.6rem;
       color: white;
       font-family: "黑体";
+      padding: 1rem 1.6rem 1rem 2.2rem;
+    }
+    a:hover{
+      background:#FF6700;
     }
     .middleleft {
       width: 20%;
       background-color: #4C4C4C;
-      padding: 0.92rem 0 0.92rem 0;
+      padding: 1.65rem 0 1.65rem 0;
       li {
-        padding: 0.95rem 1.6rem 0.95rem 2.2rem;
         overflow: hidden;
       }
       span {
@@ -130,23 +138,49 @@ ul .delborder{
         float: right;
       }
     }
-    .middleright{
-        width: 80%;
+    .middleright {
+      width: 80%;
     }
   }
-  .mainbottom{
-    margin-top:1rem;
-    .bottomleft{
-      width: 20%;
-      background-color:#5F5750;
-      }
-    }
-  }
+}
 
 
 //foot
 
-
+.foot{
+  margin:0 auto;
+  width: 92%;
+  .foottop{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ccc;
+    a:hover{
+      color:#FF6700;
+    }
+  li{
+    float: left;
+    width: 15%;
+    margin-left: 4%;
+    border-right: 1px solid #cccccc;
+  }
+  a{
+    font-size: 2rem;
+    color:#616161;
+  }
+  ul .delborder{
+    border: none;
+  }
+}
+  .footbottom{
+    font-size: 3rem;
+    color:#CACACA;
+    height: 6rem;
+    line-height: 6rem;
+    font-family: "华文新魏";
+    .words{
+      margin-left: 35%;
+    }
+  }
+}
 
 
 
