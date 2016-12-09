@@ -1,62 +1,176 @@
-*{
-    margin: 0;
-    padding:0;
+/*初始化 常用类选择器*/
+html,
+body,
+p,
+input,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  Font-size: 10px;
 }
-.head{
-    width:100%;
-    height:60px;
-    background-color:#333;
-    position: relative;
+a {
+  text-decoration: none;
 }
-.head li{
-    display: inline;
-    float:left;
-    font-size: 14px;
-    font-family:"黑体";
-    border-right:1px solid #424242;
-    padding-right:12px;
-    margin-right:12px;
+ul,
+li {
+  list-style: none;
 }
-.head ul .delborder{
-    border:none;
+.center {
+  text-align: center;
 }
-.head a{
-    text-decoration: none;
-    color:#aaa;
+.overflow {
+  overflow: hidden;
 }
-.head li a:hover{
-    color:white;
+.f-bold {
+  font-weight: bold;
 }
-.shop a:hover{;
-    background-color: white;
-    color:#FF6700;
+.right {
+  float: right;
 }
-.listleft{
-    position: absolute;
-    top:20px;
-    left:5%;
+.left {
+  float: left;
 }
-.listright{
-    position: absolute;
-    top:20px;
-    left:74%;
+body {
+  min-width: 1204px;
 }
-.shop a{
-    display: block;
-    height: 40px;
-    width: 140px;
-    padding-top: 20px;
-    padding-left: 40px;
-    font-size:20px;
-    color:#aaa;
-    background-color:#424242;
-    font-family:"黑体";
-    margin-left:86%;
+.head {
+  background-color: #333;
+  font-size: 1.4rem;
+  padding: 1.2rem 5%;
 }
-
-.main{
-    width: 90%;
-    height: 100px;
-    margin: 0 auto;
-    position: relative;
+.head a {
+  font-family: "黑体";
+  color: #B0B0B0;
+}
+.head a:hover {
+  color: white;
+}
+.head .listleft {
+  width: 50%;
+}
+.head li {
+  float: left;
+  border-right: 1px solid #424242;
+  padding-left: 0.5rem;
+  padding-right: 0.8rem;
+}
+.head .listright {
+  width: 50%;
+  float: left;
+}
+.head li {
+  float: left;
+  border-right: 1px solid #424242;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.head ul .delborder {
+  border: none;
+}
+.head ul .marginleft {
+  margin-left: 65%;
+}
+.main {
+  width: 92%;
+  margin: 0 auto;
+}
+.main .maintop {
+  height: 7.5rem;
+}
+.main .maintop .topleft {
+  width: 20%;
+  margin-top: 2.5rem;
+}
+.main .maintop .topmiddle {
+  width: 60%;
+  margin-top: 2.5rem;
+}
+.main .maintop .topmiddle a:hover {
+  color: #FF6700;
+}
+.main .maintop .topmiddle li {
+  float: left;
+  margin-right: 1.2rem;
+}
+.main .maintop .topmiddle a {
+  font-family: "黑体";
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 5.5rem;
+}
+.main .maintop .topright {
+  margin-top: 3rem;
+}
+.main .maintop input {
+  height: 3.8rem;
+  width: 14rem;
+  float: left;
+}
+.main .maintop img {
+  float: left;
+}
+.main .mainmiddle {
+  margin-top: 1.5rem;
+}
+.main .mainmiddle a {
+  display: block;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "黑体";
+  padding: 1rem 1.6rem 1rem 2.2rem;
+}
+.main .mainmiddle a:hover {
+  background: #FF6700;
+}
+.main .mainmiddle .middleleft {
+  width: 20%;
+  background-color: #4C4C4C;
+  padding: 1.65rem 0 1.65rem 0;
+}
+.main .mainmiddle .middleleft li {
+  overflow: hidden;
+}
+.main .mainmiddle .middleleft span {
+  font-size: 1.8rem;
+  color: #ccc;
+  font-weight: bold;
+  float: right;
+}
+.main .mainmiddle .middleright {
+  width: 80%;
+}
+.foot {
+  margin: 0 auto;
+  width: 92%;
+}
+.foot .foottop {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+.foot .foottop a:hover {
+  color: #FF6700;
+}
+.foot .foottop li {
+  float: left;
+  width: 15%;
+  margin-left: 4%;
+  border-right: 1px solid #cccccc;
+}
+.foot .foottop a {
+  font-size: 2rem;
+  color: #616161;
+}
+.foot .foottop ul .delborder {
+  border: none;
+}
+.foot .footbottom {
+  font-size: 3rem;
+  color: #CACACA;
+  height: 6rem;
+  line-height: 6rem;
+  font-family: "华文新魏";
+}
+.foot .footbottom .words {
+  margin-left: 35%;
 }

@@ -1,0 +1,93 @@
+body{
+  padding-bottom: 3rem;
+}
+//head style
+.head {
+  font-size: 2rem;
+  //height: 3rem;
+  line-height: 3rem;
+  color: #cccccc;
+  border-bottom: 1px solid #ccc;
+  input {
+    width: 100%;
+  }
+  margin: 0.5rem 1%;
+}
+
+//hot style
+.main {
+  overflow: hidden;
+  img {
+    width: 32%;
+    //display: inline;
+    float: left;
+    margin-top: 0.5rem;
+    margin-right: 2%;
+    &:nth-child(3n+3){
+      margin-right: 0;
+    }
+  }
+}
+
+//图文 style
+
+.mainmiddle {
+  width: 100%;
+  overflow: hidden;
+  border-top: 0.1rem solid #cccccc;
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  position: relative;
+  .shop {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+  }
+  .imgshop{
+    width: 32%;
+  }
+  .words {
+    float: right;
+    width: 64%;
+  }
+  .words1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem; /*这儿1rem等于200px？*/
+  }
+  .words2 {
+    color: #cccccc;
+    margin-top: 0.5rem;
+    //
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    //
+  }
+  .words3 {
+    color: red;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.foot {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  background: white;
+  font-size: 2rem;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  line-height: 3rem;
+  a {
+    width: 25%;
+    float: left;
+  }
+}
+

@@ -1,73 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
-    Font-size:62.5%
+body {
+  padding-bottom: 3rem;
 }
-input{
-    width: 100%;
-    font-size: 2em;
-    height: 4em;
-    color: #cccccc;
-    border-bottom: 1px solid #ccc;
+.head {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #cccccc;
+  border-bottom: 1px solid #ccc;
+  margin: 0.5rem 1%;
 }
-.main{
-    width: 100%;
-    overflow: hidden;
+.head input {
+  width: 100%;
 }
-img{
-    width: 32%;
-    display: inline;
-    float: left;
-    margin-top: 1em;
+.main {
+  overflow: hidden;
 }
-.imgmiddle{
-    margin-left: 2%;
-    margin-right: 2%;
+.main img {
+  width: 32%;
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 2%;
 }
-.maintop{
-    width: 100%;
-    overflow: hidden;
+.main img:nth-child(3n+3) {
+  margin-right: 0;
 }
-.mainmiddle{
-    width: 100%;
-    overflow: hidden;
-    border-top:0.1em solid #cccccc;
-    margin-top: 1em;
+.mainmiddle {
+  width: 100%;
+  overflow: hidden;
+  border-top: 0.1rem solid #cccccc;
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  position: relative;
 }
-.words{
-    display: inline;
-    float: left;
-    width: 64%;
+.mainmiddle .shop {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
 }
-.words1{
-    color:black;
-    font-size: 20em;
-    font-weight: bold;
-    margin-top: 1em;/*这儿1em等于400px？*/
+.mainmiddle .imgshop {
+  width: 32%;
 }
-.words2{
-    color:#cccccc;
-    font-size: 10em;
-    margin-top: 0.5em;
+.mainmiddle .words {
+  float: right;
+  width: 64%;
 }
-.words3{
-    color: red;
-    font-size: 15em;
-    margin-top: 0.5em;
+.mainmiddle .words1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  /*这儿1rem等于200px？*/
 }
-.foot{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 5em;
-    background: white;
-    border: 1px solid #cccccc;
+.mainmiddle .words2 {
+  color: #cccccc;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
 }
-li{
-    display: inline;
-    float: left;
-    width: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    line-height: 5em;
+.mainmiddle .words3 {
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.foot {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  background: white;
+  font-size: 2rem;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  line-height: 3rem;
+}
+.foot a {
+  width: 25%;
+  float: left;
 }
