@@ -4,49 +4,49 @@
 
 
 $(function () {
-    var SHOP_DATA = window.shopData;
-    var SHOP1_DATA = window.shop1Data;
-
-    $.ajax('../json/hot.json',{
-        contentType:'application/x-www-form-urlencoded',
-        success:function (data) {
+    $.ajax({
+        url: '../json/shop.json',
+        type: 'get',
+        dataType: 'json',
+        // contentType: 'application/json',
+        success: function (data) {
+            setShop2(data);
+            console.log(data);
+        }
+    });
+     $.ajax('../json/hot.json',{
+        dataType: 'json',
+        // contentType: 'application/json',
+        success: function (data) {
             setHot(data);
             console.log(data);
         }
     });
-    setShop2(SHOP_DATA);
-    setImgShop1(SHOP1_DATA);
 });
-function setImgShop1(ajaxData) {
+/**
+ * 调九个图
+ * @param ajaxData
+ */
+function setHot(ajaxData) {
     // var _otest = document.getElementsByClassName('main')[0];
     var _template = '';
     for (var i = 0; i < ajaxData.data.length; i++) {
-        _template += '<span class="words1">'+ ajaxData.data[i]['words1'] +'</span>'
-            +'<span class="words2">'+ ajaxData.data[i]['words2'] +'</span>'
-            +'<span class="words3">'+ ajaxData.data[i]['words3'] +'</span>'
-            +'<span class="words4">'+ ajaxData.data[i]['words4'] +'</span>';
+        _template += '<a href="' + ajaxData.data[i]['b'] + '"><img src="' + ajaxData.data[i]['a'] + '"></a>';
     }
     // _otest.innerHTML = _tempate;
-    $('.maintop').html(_template);
-
-
-    function setHot(ajaxData) {
-        // var _otest = document.getElementsByClassName('main')[0];
-        var _template = '';
-        for (var i = 0; i < ajaxData.data.length; i++) {
-            _template += '<a href="shop4.html"><img src="' + ajaxData.data[i]['a'] + '"></a>';
-        }
-        // _otest.innerHTML = _tempate;
-        $('.main').html(_template);
-    }
-
-    function setShop2(ajaxData) {
-        // var _dom = document.getElementsByClassName('shopContent')[0];
-        var _template = '';
-        for (var i = 0; i < ajaxData.data.length; i++) {
-            //@formatter:off
+    $('.main').html(_template);
+};
+/**
+ * 调9个图后手机数量
+ * @param ajaxData
+ */
+function setShop2(ajaxData) {
+    // var _dom = document.getElementsByClassName('shopContent')[0];
+    var _template = '';
+    for (var i = 0; i < ajaxData.data.length; i++) {
+        //@formatter:off
         _template+='<div class="mainmiddle">'
-                         +'<div class="shop"><a href="shop4.html"><img class="imgshop" src="'+ajaxData.data[i]['src']+'"/></a></div>'
+                         +'<div class="shop"><a href="main4.html"><img class="imgshop" src="'+ajaxData.data[i]['src']+'"/></a></div>'
                          +'<div class="words">'
                                 +'<p class="words1"><span>'+ajaxData.data[i]['title']+'</span></p>'
                                 +' <p class="words2"><span>'+ajaxData.data[i]['desc']+'</span></p>'
@@ -54,7 +54,7 @@ function setImgShop1(ajaxData) {
                          +'</div>'
                     +'</div>';
         //@formatter:on
-        }
-        $('.shopContent').html(_template);
     }
+    $('.shopContent').html(_template);
+}
 
