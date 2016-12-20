@@ -35,7 +35,7 @@ function setHot(ajaxData) {
     }
     // _otest.innerHTML = _tempate;
     $('.main').html(_template);
-};
+}
 /**
  * 调9个图后手机数量
  * @param ajaxData

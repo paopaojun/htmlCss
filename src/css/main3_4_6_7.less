@@ -19,20 +19,25 @@ li {
   font-size: 1.4rem;
 }
 .main {
-  margin: 0rem 2%;
+  width: 100%;
+  overflow: hidden;
+  border-top: 0.1rem solid #cccccc;
+  font-size: 0.5rem;
+  position: relative;
   .shop {
     border-top: 0.1rem solid #cccccc;
     position: relative;
     overflow: hidden;
-    .left{
+    width: 100%;
+    .left {
       position: absolute;
       top: 50%;
       left: 0;
       transform: translate(0, -50%);
       -webkit-transform: translate(0, -50%);
-      img{
-        width: 23%;
-      }
+    }
+    .imgShop {
+      width: 30%;
     }
     .right {
       margin: 2rem 1rem;
@@ -40,16 +45,17 @@ li {
       line-height: 1.5rem;
       width: 73%;
       float: right;
-      .shopName{
+      .shopName {
         font-size: 1.6rem;
       }
-      .price{
+      .price {
         font-size: 1.4rem;
         color: red;
       }
     }
   }
 }
+
 .footer {
   width: 100%;
   position: fixed;

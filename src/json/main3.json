@@ -1,0 +1,20 @@
+{
+  "code": 100,
+  "data": [
+    {
+      "img": "../images/shop3.jpg",
+      "phoneName": "小米电视3s 55英寸",
+      "price": "3499元  起"
+    },
+    {
+      "img": "../images/shop3.jpg",
+      "phoneName": "小米电视3s 60英寸",
+      "price": "4499元  起"
+    },
+    {
+      "img": "../images/shop3.jpg",
+      "phoneName": "小米电视3s 65英寸 影院版",
+      "price": "5999元  起"
+    }
+  ]
+}

@@ -49,7 +49,26 @@ li {
   background: #FF6700;
   margin-bottom: 1rem;
 }
-.mainmiddle input {
+.mainmiddle .buttonColor {
+  position: relative;
+  overflow: hidden;
+}
+.mainmiddle .buttonColor span {
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  background: #fff;
+  width: 4rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: #B0B0B0;
+  border: 1px solid #B0B0B0;
+}
+.mainmiddle .buttonSize span {
+  display: block;
+  text-align: center;
   margin: 1rem 0.5rem 0.5rem 0.5rem;
   background: #fff;
   width: 5rem;

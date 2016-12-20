@@ -1,17 +1,17 @@
 /**
- * Created by WXH on 2016/12/19.
+ * Created by WXH on 2016/12/20.
  */
 $(function () {
-    $.ajax('../json/main1.json',{
+    $.ajax('../json/main8.json',{
         dataType: 'json',
         // contentType: 'application/json',
         success: function (data) {
-            setImgShop1(data);
+            setImgShop8(data);
             console.log(data);
         }
     });
 });
-function setImgShop1(ajaxData) {
+function setImgShop8(ajaxData) {
     // var _otest = document.getElementsByClassName('main')[0];
     //@formatter:off
     var _template = '<div class="maintop"><img class="shopimg" src="' + ajaxData.data['img'] + '"/></div>'
@@ -22,10 +22,7 @@ function setImgShop1(ajaxData) {
             +'<span class="words4">' + ajaxData.data['words4'] + '</span><br/>'
             +'<span class="words5">' + ajaxData.data['words5'] +'</span>'
             +'<div class="buttonColor">'
-                 +'<span onclick="">' + ajaxData.data['color1'] +'</span><span onclick="">' + ajaxData.data['color2'] +'</span><span onclick="">' + ajaxData.data['color3'] +'</span>'
-            +'</div>'
-            +'<div class="buttonSize">'
-                 +'<span onclick="">' + ajaxData.data['size1'] +'</span>'
+                 +'<span onclick="">' + ajaxData.data['color1'] +'</span>'
              +'</div>'
         +'</div>';
     //@formatter:on

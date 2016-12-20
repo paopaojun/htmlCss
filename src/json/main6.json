@@ -1,0 +1,15 @@
+{
+  "code": 100,
+  "data": [
+    {
+      "img": "../images/shop6.jpg",
+      "phoneName": "小米5 标准版 32GB 3D玻璃",
+      "price": "1599元  起"
+    },
+    {
+      "img": "../images/shop6.jpg",
+      "phoneName": "小米5 高配版 64GB 3D玻璃",
+      "price": "1799元  起"
+    }
+  ]
+}

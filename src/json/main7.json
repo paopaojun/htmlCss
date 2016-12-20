@@ -1,0 +1,15 @@
+{
+  "code": 100,
+  "data": [
+    {
+      "img": "../images/shop7.jpg",
+      "phoneName": "红米3S 16GB版",
+      "price": "699元  起"
+    },
+    {
+      "img": "../images/shop7.jpg",
+      "phoneName": "红米3S 32GB版",
+      "price": "899元  起"
+    }
+  ]
+}

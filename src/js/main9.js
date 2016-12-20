@@ -1,17 +1,20 @@
 /**
+ * Created by WXH on 2016/12/20.
+ */
+/**
  * Created by WXH on 2016/12/19.
  */
 $(function () {
-    $.ajax('../json/main1.json',{
+    $.ajax('../json/main9.json',{
         dataType: 'json',
         // contentType: 'application/json',
         success: function (data) {
-            setImgShop1(data);
+            setImgShop9(data);
             console.log(data);
         }
     });
 });
-function setImgShop1(ajaxData) {
+function setImgShop9(ajaxData) {
     // var _otest = document.getElementsByClassName('main')[0];
     //@formatter:off
     var _template = '<div class="maintop"><img class="shopimg" src="' + ajaxData.data['img'] + '"/></div>'

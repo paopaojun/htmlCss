@@ -45,13 +45,13 @@ body {
   float: right;
   width: 64%;
 }
-.mainmiddle .words1 {
+.mainmiddle .words .words1 {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 1rem;
   /*这儿1rem等于200px？*/
 }
-.mainmiddle .words2 {
+.mainmiddle .words .words2 {
   color: #cccccc;
   margin-top: 0.5rem;
   overflow: hidden;
@@ -60,7 +60,7 @@ body {
   -webkit-box-orient: vertical;
   word-break: break-all;
 }
-.mainmiddle .words3 {
+.mainmiddle .words .words3 {
   color: red;
   font-size: 1.5rem;
   margin-top: 0.5rem;

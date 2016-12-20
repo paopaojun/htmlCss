@@ -19,12 +19,17 @@ li {
   font-size: 1.4rem;
 }
 .main {
-  margin: 0rem 2%;
+  width: 100%;
+  overflow: hidden;
+  border-top: 0.1rem solid #cccccc;
+  font-size: 0.5rem;
+  position: relative;
 }
 .main .shop {
   border-top: 0.1rem solid #cccccc;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .main .shop .left {
   position: absolute;
@@ -33,8 +38,8 @@ li {
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
 }
-.main .shop .left img {
-  width: 40%;
+.main .shop .imgShop {
+  width: 30%;
 }
 .main .shop .right {
   margin: 2rem 1rem;
