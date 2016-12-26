@@ -1,0 +1,17 @@
+{
+  "code": 100,
+  "data": [
+    {
+      "img": "../images/shop4.jpg",
+      "phoneName": "小米空气净化器2",
+      "price": "699",
+      "num": 1
+    },
+    {
+      "img": "../images/shop4.jpg",
+      "phoneName": "小米5s Plus 高配版 64GB",
+      "price": "2599",
+      "num": 2
+    }
+  ]
+}

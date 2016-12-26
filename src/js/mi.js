@@ -48,7 +48,7 @@ function setShop2(ajaxData) {
         _template+='<div class="mainmiddle">'
                          +'<div class="shop"><a href="main4.html"><img class="imgshop" src="'+ajaxData.data[i]['src']+'"/></a></div>'
                          +'<div class="words">'
-                                +'<p class="words1"><span>'+ajaxData.data[i]['title']+'</span></p>'
+                                +'<p class="words1"><span>'+ajaxData.data[i].title+'</span></p>'
                                 +' <p class="words2"><span>'+ajaxData.data[i]['desc']+'</span></p>'
                                 +'<p class="words3"><span>'+ajaxData.data[i]['price']+'</span></p>'
                          +'</div>'
@@ -57,4 +57,3 @@ function setShop2(ajaxData) {
     }
     $('.shopContent').html(_template);
 }
-

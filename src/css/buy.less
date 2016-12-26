@@ -1,0 +1,103 @@
+body {
+  padding-bottom: 3rem;
+}
+
+html,
+body,
+p,
+input,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  Font-size: 10px;
+}
+
+.head {
+  width: 100%;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  background: #B0B0B0;
+  span {
+    float: left;
+    margin-left: 0.5rem;
+  }
+}
+
+.main {
+  .mainTop {
+    position: relative;
+    overflow: hidden;
+    .shopCheck {
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+    }
+    .left img {
+      float: left;
+      height: 6rem;
+      margin: 2rem 5% 1rem 10%;
+    }
+    .right {
+      width: 65%;
+      float: left;
+      margin: 1rem 0rem;
+      .words1 {
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.4rem;
+      }
+      .words2 {
+        font-size: 1.2rem;
+        color: #B0B0B0;
+        margin-bottom: 0.5rem;
+      }
+      button {
+        margin: 0rem 0.5rem;
+      }
+      .del {
+        border: 1px solid #B0B0B0;
+        font-size: 1.4rem;
+        float: right;
+        margin-right: 3rem;
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #B0B0B0;
+  .item {
+    width: 33.3%;
+    float: left;
+    height: 4rem;
+    line-height: 4rem;
+   &.buyIt{
+      background: #FF6700;
+   }
+    &.goShop{
+      background: #B0B0B0;
+    }
+  }
+  .price {
+    line-height: initial;
+    span{
+      line-height: 2rem;
+      display: block;
+    }
+    .rmb {
+      display: inline-block;
+      color: #FF6700;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+}
