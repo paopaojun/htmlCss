@@ -13,8 +13,6 @@ $(document).ready(function () {
         // contentType: 'application/json',
         success: function (data) {
             buyShop(data);
-            console.log(data);
-
             cartNum();
             del();
             shopNum();

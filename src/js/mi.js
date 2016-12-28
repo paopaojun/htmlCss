@@ -46,13 +46,13 @@ function setShop2(ajaxData) {
     for (var i = 0; i < ajaxData.data.length; i++) {
         //@formatter:off
         _template+='<div class="mainmiddle">'
-                         +'<div class="shop"><a href="main4.html"><img class="imgshop" src="'+ajaxData.data[i]['src']+'"/></a></div>'
+                         +'<a href="'+ajaxData.data[i].href+'"><div class="shop"><img class="imgshop" src="'+ajaxData.data[i]['src']+'"/></div>'
                          +'<div class="words">'
                                 +'<p class="words1"><span>'+ajaxData.data[i].title+'</span></p>'
                                 +' <p class="words2"><span>'+ajaxData.data[i]['desc']+'</span></p>'
                                 +'<p class="words3"><span>'+ajaxData.data[i]['price']+'</span></p>'
                          +'</div>'
-                    +'</div>';
+                    +'</div></a>';
         //@formatter:on
     }
     $('.shopContent').html(_template);
