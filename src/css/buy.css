@@ -34,10 +34,9 @@ li {
   transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
 }
-.main .mainTop .left img {
-  float: left;
-  height: 6rem;
-  margin: 2rem 5% 1rem 10%;
+.main .mainTop .left {
+  width: 30%;
+  padding: 0rem 1% 0rem 4%;
 }
 .main .mainTop .right {
   width: 65%;
