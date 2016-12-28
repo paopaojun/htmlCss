@@ -1,0 +1,49 @@
+body {
+  padding-bottom: 3rem;
+}
+.head {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  background: #B0B0B0;
+  text-align: center;
+}
+.main .phone {
+  overflow: hidden;
+  border: 0.5rem solid #CACACA;
+}
+.main .pad {
+  overflow: hidden;
+  padding: 1rem 0;
+  border-bottom: 0.5rem solid #CACACA;
+  border-left: 0.5rem solid #CACACA;
+  border-right: 0.5rem solid #CACACA;
+}
+.main .sort {
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+}
+.main .shop {
+  width: 25%;
+  float: left;
+  margin: 0.5rem 0;
+}
+.main .words {
+  text-align: center;
+}
+.foot {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 3rem;
+  background: white;
+  font-size: 2rem;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  line-height: 3rem;
+}
+.foot a {
+  width: 25%;
+  float: left;
+}
