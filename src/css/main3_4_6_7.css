@@ -18,6 +18,10 @@ li {
   line-height: 3rem;
   font-size: 1.4rem;
 }
+.header span {
+  float: left;
+  margin-left: 0.5rem;
+}
 .main {
   width: 100%;
   overflow: hidden;
@@ -55,7 +59,7 @@ li {
   font-size: 1.4rem;
   color: red;
 }
-.footer {
+.foot {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -66,7 +70,7 @@ li {
   text-align: center;
   line-height: 3rem;
 }
-.footer a {
+.foot a {
   width: 25%;
   float: left;
 }

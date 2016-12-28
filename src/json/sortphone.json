@@ -31,21 +31,49 @@
     },
     {
       "src": "../images/sort/sort8.jpg",
-      "words": "小米max全网通"
+      "words": "小米max"
     },
     {
       "src": "../images/sort/sort9.jpg",
-      "words": "红米4 高配版 32GB"
+      "words": "红米4 32GB"
     },
     {
       "src": "../images/sort/sort10.jpg",
-      "words": "红米4 标配版 16GB"
+      "words": "红米4 16GB"
     },{
       "src": "../images/sort/sort11.jpg",
       "words": "红米Pro"
     },{
       "src": "../images/sort/sort12.jpg",
       "words": "红米Note 4"
+    },
+    {
+      "src": "../images/sort/sort2.jpg",
+      "words": "红米Note 4"
+    },
+    {
+      "src": "../images/sort/sort3.jpg",
+      "words": "小米手机5"
+    },
+    {
+      "src": "../images/sort/sort4.jpg",
+      "words": "小米MIX"
+    },
+    {
+      "src": "../images/sort/sort5.jpg",
+      "words": "小米Note 2"
+    },
+    {
+      "src": "../images/sort/sort6.jpg",
+      "words": "小米5s Plus"
+    },
+    {
+      "src": "../images/sort/sort7.jpg",
+      "words": "小米5s"
+    },
+    {
+      "src": "../images/sort/sort8.jpg",
+      "words": "小米全网通"
     }
   ]
 }
