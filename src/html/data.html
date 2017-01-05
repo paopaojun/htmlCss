@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=EDGE">
     <meta name="format-detection" content="telephone=no">
     <meta charset="utf-8">
-    <title>Title</title>
+    <title></title>
     <style>
-        div{
-            width: 300px;
+        div:not([id="point"]){
+            width: 70%;
             height: 20px;
             line-height: 20px;
             font-size: 16px;
@@ -16,7 +16,146 @@
             text-align: center;
         }
         .jingmen{
-            background: #F96D39;
+           background:#F96D39;
+        }
+        .jing{
+            background-image:linear-gradient(to top left,red, orange,yellow,green,blue,indigo,violet);
+        }
+        #point{
+            margin-left:50%;
+            height: 150px;
+            width: 2px;
+            animation:move;
+            -webkit-animation:move;
+            -moz-animation:move;
+            /*完成从0%到100%一次动画所需时间。单位：S秒*/
+            animation-duration: 2s;
+            -webkit-animation-duration:2s;
+            -moz-animation-duration:2s;
+            animation-timing-function: linear;
+            -webkit-timing-function:linear;
+            -moz-timing-function:linear;
+            animation-delay: 0s;
+            -webkit-animation-delay:0s;
+            -moz-animation-delay:0s;
+            animation-iteration-count:infinite;
+            -webkit-animation-iteration-count:infinite;
+            -moz-animation-ineration-count:infinite;
+            background-image:linear-gradient(to top left,red, orange,yellow,green,blue,indigo,violet);
+        }
+        #circle{
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            animation:move2;
+            -webkit-animation:move2;
+            -moz-animation:move2;
+            /*完成从0%到100%一次动画所需时间。单位：S秒*/
+            animation-duration: 2s;
+            -webkit-animation-duration:2s;
+            -moz-animation-duration:2s;
+            animation-timing-function: linear;
+            -webkit-timing-function:linear;
+            -moz-timing-function:linear;
+            animation-delay: 0s;
+            -webkit-animation-delay:0s;
+            -moz-animation-delay:0s;
+            animation-iteration-count:infinite;
+            -webkit-animation-iteration-count:infinite;
+            -moz-animation-ineration-count:infinite;
+            background-image:linear-gradient(to top left,violet, orange,yellow,green,blue,indigo,red);
+        }
+        @keyframes move {
+            0% {
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                transform:rotate(-90deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            12.5% {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                transform:rotate(-45deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            25% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                transform:rotate(0deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            37.5% {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                transform:rotate(45deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            50% {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                transform:rotate(90deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            62.5% {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                transform:rotate(45deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            75% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                transform:rotate(0deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            87.5% {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                transform:rotate(-45deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+            100% {
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                transform:rotate(-90deg);
+                -webkit-transform-origin:top left;
+                transform-origin:top left;
+            }
+        }
+        @keyframes move2{
+            0% {
+                -webkit-transform: translate(150px,-150px);
+                -moz-transform:translate(150px,-150px);
+                transform: translate(150px,-150px);
+            }
+            /*25% {*/
+                /*-webkit-transform: translate(0px,0px);*/
+                /*-moz-transform:translate(0px,0px);*/
+                /*transform: translate(0px,0px);*/
+            /*}*/
+            50% {
+                -webkit-transform: translate(-150px,-150px);
+                -moz-transform:translate(-150px,-150px);
+                transform: translate(-150px,-150px);
+            }
+            /*75% {*/
+                /*-webkit-transform: translate(0px,0px);*/
+                /*-moz-transform:translate(0px,0px);*/
+                /*transform: translate(0px,0px);*/
+            /*}*/
+            100% {
+                -webkit-transform: translate(150px,-150px);
+                -moz-transform:translate(150px,-150px);
+                transform: translate(150px,-150px);
+            }
         }
     </style>
     <script language="JavaScript" type="text/javascript">
@@ -67,8 +206,12 @@
     <div class="jingmen">当前时间：</div>
     <div id="show"></div>
     <div></div>
-    <div class="jingmen">距离泡泡菌到达荆门时间：</div>
+    <div class="jing">距离泡泡菌到达荆门时间：</div>
     <div id="dao"></div>
+    <div></div>
+    <div class="jingmen">单摆一次1S</div>
+    <div id="point"></div>
+    <div id="circle"></div>
 
 </body>
 </html>
