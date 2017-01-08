@@ -16,7 +16,7 @@
             text-align: center;
         }
         .jingmen{
-           background:#F96D39;
+            background:#F96D39;
         }
         .jing{
             background-image:linear-gradient(to top left,red, orange,yellow,green,blue,indigo,violet);
@@ -137,9 +137,9 @@
                 transform: translate(150px,-150px);
             }
             /*25% {*/
-                /*-webkit-transform: translate(0px,0px);*/
-                /*-moz-transform:translate(0px,0px);*/
-                /*transform: translate(0px,0px);*/
+            /*-webkit-transform: translate(0px,0px);*/
+            /*-moz-transform:translate(0px,0px);*/
+            /*transform: translate(0px,0px);*/
             /*}*/
             50% {
                 -webkit-transform: translate(-150px,-150px);
@@ -147,9 +147,9 @@
                 transform: translate(-150px,-150px);
             }
             /*75% {*/
-                /*-webkit-transform: translate(0px,0px);*/
-                /*-moz-transform:translate(0px,0px);*/
-                /*transform: translate(0px,0px);*/
+            /*-webkit-transform: translate(0px,0px);*/
+            /*-moz-transform:translate(0px,0px);*/
+            /*transform: translate(0px,0px);*/
             /*}*/
             100% {
                 -webkit-transform: translate(150px,-150px);
@@ -163,55 +163,55 @@
             showTime();
             daojishi()
         }
-            function checkTime(i){
+        function checkTime(i){
             return i<10? '0'+i:''+i;
         }
-            function showTime() {
-                var myDate=new Date();
-                var year=myDate.getFullYear();
-                var month=myDate.getMonth()+1;
-                var date=myDate.getDate();
-                var d = myDate.getDay()
-                var weekday=new Array(7)
-                weekday[0]="星期日"
-                weekday[1]="星期一"
-                weekday[2]="星期二"
-                weekday[3]="星期三"
-                weekday[4]="星期四"
-                weekday[5]="星期五"
-                weekday[6]="星期六";
-                var h =myDate.getHours();
-                var m =myDate.getMinutes();
-                var s =myDate.getSeconds();
-                m=checkTime(m);
-                s=checkTime(s);
-                document.getElementById('show').innerHTML=year+'年'+month+'月'+date+'日'+weekday[d]+h+':'+m+':'+s;
-                setTimeout(showTime,500);
-            }
-            function daojishi() {
-                var dao =document.getElementById('dao');
-                var nowtime= new Date();
-                var endtime= new Date("2017/1/17,23:0:0");
-                var day = parseInt((endtime-nowtime)/(1000*60*60*24));
-                var h =   parseInt((endtime-nowtime)/(1000*60*60)%24);
-                var m =   parseInt((endtime-nowtime)/(1000*60)%60);
-                var s =   parseInt((endtime-nowtime)/(1000)%60);
-                s=checkTime(s);
-                dao.innerHTML=day+"天"+h+'小时'+m+'分钟'+s+'秒';
-                setTimeout(daojishi,500);
-            }
+        function showTime() {
+            var myDate=new Date();
+            var year=myDate.getFullYear();
+            var month=myDate.getMonth()+1;
+            var date=myDate.getDate();
+            var d = myDate.getDay()
+            var weekday=new Array(7)
+            weekday[0]="星期日"
+            weekday[1]="星期一"
+            weekday[2]="星期二"
+            weekday[3]="星期三"
+            weekday[4]="星期四"
+            weekday[5]="星期五"
+            weekday[6]="星期六";
+            var h =myDate.getHours();
+            var m =myDate.getMinutes();
+            var s =myDate.getSeconds();
+            m=checkTime(m);
+            s=checkTime(s);
+            document.getElementById('show').innerHTML=year+'年'+month+'月'+date+'日'+weekday[d]+h+':'+m+':'+s;
+            setTimeout(showTime,500);
+        }
+        function daojishi() {
+            var dao =document.getElementById('dao');
+            var nowtime= new Date();
+            var endtime= new Date("2017/1/17,23:0:0");
+            var day = parseInt((endtime-nowtime)/(1000*60*60*24));
+            var h =   parseInt((endtime-nowtime)/(1000*60*60)%24);
+            var m =   parseInt((endtime-nowtime)/(1000*60)%60);
+            var s =   parseInt((endtime-nowtime)/(1000)%60);
+            s=checkTime(s);
+            dao.innerHTML=day+"天"+h+'小时'+m+'分钟'+s+'秒';
+            setTimeout(daojishi,500);
+        }
     </script>
 </head>
 <body>
-    <div class="jingmen">当前时间：</div>
-    <div id="show"></div>
-    <div></div>
-    <div class="jing">距离泡泡菌到达荆门时间：</div>
-    <div id="dao"></div>
-    <div></div>
-    <div class="jingmen">单摆一次1S</div>
-    <div id="point"></div>
-    <div id="circle"></div>
+<div class="jingmen">当前时间：</div>
+<div id="show"></div>
+<div></div>
+<div class="jing">距离泡泡菌到达荆门时间：</div>
+<div id="dao"></div>
+<div></div>
+<div class="jingmen">单摆一次1S</div>
+<div id="point"></div>
+<div id="circle"></div>
 
 </body>
 </html>
