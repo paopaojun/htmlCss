@@ -3,8 +3,8 @@
  */
 $(function () {
     $.ajax({
-        url:'../json/liveOnline.json',
-        type:'get',
+        url:'http://120.132.3.51:8080/uci-pre/unionpay/shop/getIndustryInfo.json',
+        type:'post',
         dataType:'json',
         success:function (data) {
             food(data);
@@ -16,12 +16,11 @@ function food(ajaxData) {
     var _template = '';
     for (var i = 0; i < ajaxData.data.length; i++) {
         if (i <= 8){
-            _template += '<div class="box"><span>'+ajaxData.data[i].shopClass+'</span></div>';
+            _template += '<span>'+ajaxData.data[i].shopClass+'</span>';
         }
         else{
-            _template += '<div class="box"><span>'+ajaxData.data[i].shopClass+'</span><span class="more"><img src="../images/liveOnline/more.png"/></span></div>';
+            _template += '<span>'+ajaxData.data[i].shopClass+'</span><span class="more"><img src="../images/liveOnline/more.png"/></span>';
         }
     }
-    // _otest.innerHTML = _tempate;
-    $('.food').html(_template);
+    $('.box').html(_template);
 }
