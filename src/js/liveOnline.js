@@ -6,8 +6,11 @@ $(function () {
         url:'http://120.132.3.51:8080/uci-pre/unionpay/shop/getIndustryInfo.json',
         type:'post',
         dataType:'json',
+        contentType: "application/json",
+        data: JSON.stringify({}),
         success:function (data) {
-            food(data);
+            console.log(data);
+            // food(data);
         }
     });
 });
