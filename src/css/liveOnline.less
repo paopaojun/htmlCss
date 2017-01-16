@@ -1,4 +1,4 @@
-.food {
+.kind {
   margin-top: 2rem;
   .topLeft {
     margin-left: 2%;
@@ -13,6 +13,7 @@
     padding: 0 2%;
     overflow: hidden;
     span, .item {
+      overflow: hidden;
       border: 0.5px solid #DDD;
       background-color: white;
       display: block;
@@ -21,12 +22,13 @@
       line-height: 3.6rem;
       text-align: center;
       float: left;
-      //&:nth-child(4n+1){
-      //  margin-left: 2%;
-      //}
+
       box-sizing: border-box;
+      &.hide {
+        display: none;
+      }
     }
-    .more {
+    .more,.less{
       margin: 0 auto;
       img {
         width: 22%;

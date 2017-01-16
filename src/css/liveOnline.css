@@ -1,21 +1,22 @@
-.food {
+.kind {
   margin-top: 2rem;
 }
-.food .topLeft {
+.kind .topLeft {
   margin-left: 2%;
 }
-.food .topLeft img {
+.kind .topLeft img {
   margin-right: 2%;
   width: 5%;
 }
-.food .box {
+.kind .box {
   margin-top: 1rem;
   width: 96%;
   padding: 0 2%;
   overflow: hidden;
 }
-.food .box span,
-.food .box .item {
+.kind .box span,
+.kind .box .item {
+  overflow: hidden;
   border: 0.5px solid #DDD;
   background-color: white;
   display: block;
@@ -26,9 +27,15 @@
   float: left;
   box-sizing: border-box;
 }
-.food .box .more {
+.kind .box span.hide,
+.kind .box .item.hide {
+  display: none;
+}
+.kind .box .more,
+.kind .box .less {
   margin: 0 auto;
 }
-.food .box .more img {
+.kind .box .more img,
+.kind .box .less img {
   width: 22%;
 }
